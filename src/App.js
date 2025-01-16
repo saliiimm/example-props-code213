@@ -10,6 +10,7 @@ import halo from './assets/haloinfinite.png';
 import minecraft from './assets/minecraft.png';
 import mw2 from './assets/mw2.png';
 import Players from './components/Players/Players';
+import Navbar from './components/Navbar/Navbar';
 function App() {
   const xboxGames = [
     {
@@ -113,6 +114,7 @@ function App() {
   ];
   return (
     <div className="App">
+      <Navbar />
       <Players vailable={4} maximum={20} />
       <GamesList list={xboxGames} />
     </div>
